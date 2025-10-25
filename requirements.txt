@@ -3,3 +3,4 @@ qiskit-ibm-runtime
 qiskit-aer
 amazon-braket-sdk
 qiskit_braket_provider
+scikit-learn
