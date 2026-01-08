@@ -41,7 +41,6 @@ class ILPSolver:
             # Skip quadratic models (PuLP ILP is linear only)
             return SolveResult(
                 best_assignment={v: 0 for v in model.variables},
-<<<<<<< HEAD
                 best_energy=float("inf"),
                 wall_time_s=0.0,
                 solver_time_s=0.0,
@@ -51,14 +50,6 @@ class ILPSolver:
                     "status": "SKIPPED",
                     "reason": "PuLP ILP does not support quadratic terms",
                 },
-=======
-                best_energy=float('inf'),
-                wall_time_s=0.0,
-                solver_time_s=0.0,
-                trace=SolverTrace(times=[0.0], energies=[float('inf')]),
-                success=False,
-                metadata={"status": "SKIPPED", "reason": "PuLP ILP does not support quadratic terms"}
->>>>>>> ca7a2e3b642d60fb1eb3ebe86f6951595eb5a2ec
             )
 
         start_time = time.perf_counter()
