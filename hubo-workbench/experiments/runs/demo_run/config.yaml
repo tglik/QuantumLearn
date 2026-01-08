@@ -1,0 +1,17 @@
+family: assignment
+reduction:
+  enable_reduction: true
+  max_degree: 2
+  penalty_scale: 10.0
+repeats: 2
+sizes:
+- 5
+solvers:
+- budget:
+    iters: 20000
+    wall_time_s: 5.0
+  name: sa
+- budget:
+    wall_time_s: 30.0
+  name: ilp
+target: null

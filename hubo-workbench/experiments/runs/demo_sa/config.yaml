@@ -1,0 +1,14 @@
+family: assignment
+reduction:
+  enable_reduction: true
+  max_degree: 2
+  penalty_scale: 10.0
+repeats: 2
+sizes:
+- 5
+solvers:
+- budget:
+    iters: 5000
+    wall_time_s: 2.0
+  name: sa
+target: null

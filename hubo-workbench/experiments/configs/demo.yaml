@@ -1,0 +1,21 @@
+family: assignment
+sizes:
+- 5
+repeats: 2
+seeds: null
+solvers:
+- name: sa
+  budget:
+    iters: 20000
+    wall_time_s: 5.0
+  params: {}
+- name: ilp
+  budget:
+    wall_time_s: 30.0
+  params: {}
+reduction:
+  enable_reduction: true
+  penalty_scale: 10.0
+  max_degree: 2
+target: null
+notes: ''
