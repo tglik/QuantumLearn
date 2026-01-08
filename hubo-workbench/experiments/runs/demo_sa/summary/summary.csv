@@ -1,0 +1,2 @@
+family,size,solver,best_energy_mean,best_energy_median,best_energy_std,wall_time_s_mean,wall_time_s_median,approx_ratio_mean,approx_ratio_median,success_mean
+assignment,5,sa,21.59186753577245,21.59186753577245,5.887585100998355,0.6643069999990985,0.6643069999990985,1.0,1.0,0.0

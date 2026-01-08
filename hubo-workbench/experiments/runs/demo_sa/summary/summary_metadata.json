@@ -1,0 +1,12 @@
+{
+  "total_runs": 2,
+  "families": [
+    "assignment"
+  ],
+  "sizes": [
+    5
+  ],
+  "solvers": [
+    "sa"
+  ]
+}

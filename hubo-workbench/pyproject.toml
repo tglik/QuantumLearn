@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hubo-workbench"
+version = "0.1.0"
+description = "HUBO/QUBO benchmarking workbench with reproducible runner and metrics"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "HUBO Workbench" }]
+license = { text = "MIT" }
+dependencies = [
+  "typer>=0.9",
+  "pydantic>=2.6",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.1",
+  "tqdm>=4.66",
+  "networkx>=3.1",
+  "pulp>=2.8",
+  "pyyaml>=6.0.1",
+  "matplotlib>=3.8"
+]
+
+[project.optional-dependencies]
+qiskit = ["qiskit>=1.0"]
+dwave = ["dwave-system>=1.23", "dimod>=0.12"]
+
+[project.scripts]
+hubo = "hubo.cli:app"
+
+[tool.hatch.build]
+packages = ["src/hubo"]
